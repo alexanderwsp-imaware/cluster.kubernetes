@@ -69,6 +69,7 @@ spec:
       labels:
         app: details
         version: v1
+        newlabel: none
     spec:
       serviceAccountName: bookinfo-details
       containers:
