@@ -54,21 +54,21 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: details-v1
+  name: details-v2
   labels:
     app: details
-    version: v1
+    version: v2
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: details
-      version: v1
+      version: v2
   template:
     metadata:
       labels:
         app: details
-        version: v1
+        version: v2
         newlabel: none
     spec:
       serviceAccountName: bookinfo-details
