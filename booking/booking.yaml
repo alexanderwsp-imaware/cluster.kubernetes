@@ -36,6 +36,7 @@ metadata:
   labels:
     app: details
     service: details
+    labelnew: newlabel
 spec:
   ports:
   - port: 9080
