@@ -1,0 +1,16 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  namespace: istio-system
+  name: istio-control-plane
+spec:
+  meshConfig:
+    defaultConfig:
+      tracing:
+        sampling: 50
+    outboundTrafficPolicy:
+      mode: ALLOW_ANY
+  components:
+    ingressGateways:
+      - name: istio-ingressgateway
+        enabled: true
